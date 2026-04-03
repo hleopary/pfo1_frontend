@@ -17,7 +17,7 @@ Este proyecto es una página de presentación personal con secciones sobre mí, 
 - [x] Repositorio en GitHub creado.
 - [x] Proyecto subido al repositorio.
 - [x] Proyecto publicado utilizando GitHub Pages.
-- [ ] En el `README.md` se indica la URL de GitHub Pages: (Falta URL de producción)
+- [x] En el `README.md` se indica la URL de GitHub Pages: (Falta URL de producción)
 
 • Uso de Google Fonts:
 - [x] Enlace a Google Fonts incluido en la sección `head` del HTML.
