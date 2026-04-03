@@ -34,9 +34,9 @@
       <h2>Sobre mí</h2>
       <!-- Comentario 3: Aquí describo quién soy, intereses y misión como desarrollador -->
       <div class="presentacion">
-        <img src="img/avatar.svg" alt="Avatar de la persona" class="avatar">
+        <img src="img/avatar.png" alt="Avatar de la persona" class="avatar">
         <p>
-          Hola, soy [Tu Nombre o Alias], desarrollador/a web en formación. Me interesan el desarrollo front-end,
+          Hola, soy Leo Pary, desarrollador/a web en formación. Me interesan el desarrollo front-end,
           experiencias de usuario y construir interfaces accesibles. Mi misión es aprender continuamente y producir
           proyectos claros, mantenibles y responsivos.
         </p>
@@ -48,59 +48,74 @@
       <h2>Proyectos</h2>
       <div class="tarjetas-grid">
         <article class="tarjeta">
-          <img src="img/movie1.svg" alt="Proyecto 1 - imagen" class="tarjeta-img">
-          <h3>Proyecto 1</h3>
-          <p>Breve descripción del proyecto 1. Tecnologías: HTML, CSS, JavaScript.</p>
+          <img src="img/project.png" alt="Proyecto 1 - imagen" class="tarjeta-img">
+          <h3>Dashboard Nexus</h3>
+          <p>Mockup de interfaz para un panel de administración. Tecnologías: HTML, CSS, JavaScript Moderno.</p>
         </article>
 
         <article class="tarjeta">
-          <img src="img/movie2.svg" alt="Proyecto 2 - imagen" class="tarjeta-img">
-          <h3>Proyecto 2</h3>
-          <p>Breve descripción del proyecto 2. Tecnologías: React, APIs, Responsive Design.</p>
+          <img src="img/project.png" alt="Proyecto 2 - imagen" class="tarjeta-img">
+          <h3>Plataforma Analítica</h3>
+          <p>Sistema de métricas en tiempo real enfocado en accesibilidad y responsive design. React y APIs.</p>
         </article>
-
-        <!-- Puedes copiar más tarjetas para agregar más proyectos -->
       </div>
     </section>
 
     <!-- Listado de Habilidades -->
     <section id="habilidades" class="habilidades">
       <h2>Habilidades</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Domino</th>
-            <th>Quiero aprender</th>
-            <th>Hobbies</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>HTML, CSS, JavaScript básico</td>
-            <td>React avanzado, Node.js</td>
-            <td>Fotografía, cine, ajedrez</td>
-          </tr>
-        </tbody>
-      </table>
-      <!-- Comentario 4: Considera usar una visualización tipo progress bar para mostrar niveles de dominio. -->
+      <div class="habilidades-grid">
+        <div class="skill-box">
+          <h3>Domino</h3>
+          <div class="skill-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript Básico</span>
+            <span class="tag">Responsive Design</span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <h3>Quiero aprender</h3>
+          <div class="skill-tags">
+            <span class="tag">React Avanzado</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Bases de Datos</span>
+          </div>
+        </div>
+        <div class="skill-box full-width">
+          <h3>Hobbies</h3>
+          <div class="skill-tags">
+            <span class="tag">Fotografía</span>
+            <span class="tag">Cine</span>
+            <span class="tag">Ajedrez</span>
+            <span class="tag">Mecánica</span>
+            <span class="tag">Bicicletas</span>
+          </div>
+        </div>
+      </div>
+      <!-- Comentario 4: Uso de flexbox para el grid de habilidades en tarjetas visuales. -->
     </section>
 
     <!-- Formulario de Contacto -->
     <section id="contacto" class="contacto">
       <h2>Contacto</h2>
       <form action="#" method="post" class="contact-form">
-        <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
-
-        <label for="apellido">Apellido</label>
-        <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" required>
-
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
-
-        <label for="telefono">Teléfono</label>
-        <input type="tel" id="telefono" name="telefono" placeholder="+54 9 ...">
-
+        <div>
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+        </div>
+        <div>
+          <label for="apellido">Apellido</label>
+          <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" required>
+        </div>
+        <div class="full-width">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
+        </div>
+        <div class="full-width">
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="+54 9 ...">
+        </div>
         <button type="submit" class="btn-submit">Enviar</button>
       </form>
     </section>
@@ -110,21 +125,21 @@
       <h2>Películas Favoritas</h2>
       <div class="peliculas-list">
         <article class="pelicula-item">
-          <img src="img/movie1.svg" alt="Película 1" class="pelicula-img">
-          <h3>MATRIX</h3>
-          <p>Comentario breve sobre por qué esta película es una de las mejores según mi criterio.</p>
+          <img src="img/matrix.png" alt="Película 1 - Matrix" class="pelicula-img">
+          <h3>THE MATRIX</h3>
+          <p>Un clásico indiscutible que cambió el cine de ciencia ficción y efectos especiales para siempre.</p>
         </article>
 
         <article class="pelicula-item">
-          <img src="img/movie2.svg" alt="Película 2" class="pelicula-img">
-          <h3>Película 2</h3>
-          <p>Comentario breve sobre la segunda película favorita.</p>
+          <img src="img/avatar_movie.png" alt="Película 2 - Avatar" class="pelicula-img">
+          <h3>AVATAR</h3>
+          <p>Una experiencia visual y auditiva sin precedentes en la construcción de mundos.</p>
         </article>
 
         <article class="pelicula-item">
-          <img src="img/movie3.svg" alt="Película 3" class="pelicula-img">
-          <h3>Película 3</h3>
-          <p>Comentario breve sobre la tercera película favorita.</p>
+          <img src="img/bicycle.png" alt="Película 3 - Ladrón de bicicletas" class="pelicula-img">
+          <h3>LADRÓN DE BICICLETAS</h3>
+          <p>Obra cumbre del neorrealismo italiano, con una estética en blanco y negro impecable.</p>
         </article>
       </div>
     </section>
