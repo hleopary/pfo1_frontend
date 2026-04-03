@@ -56,3 +56,5 @@ Secciones obligatorias en `main`:
 Siguientes pasos sugeridos:
 1. Crear un repositorio en GitHub y subir el proyecto.
 2. Publicar con GitHub Pages o Vercel y actualizar este README con la URL.
+3. https://hleopary.github.io/pfo1_frontend/ 
+
