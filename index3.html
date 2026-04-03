@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metaetiquetas obligatorias -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título descriptivo -->
+    <title>Mi Portafolio Personal</title>
+    
+    <!-- Vínculo a Google Fonts (Roboto) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Vínculo al archivo CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- 1. Sección de Encabezado -->
+    <!-- Función: Contiene el título/logo principal del sitio. Mejora futura: Reemplazar texto por un logo SVG escalable y agregar un modo oscuro/claro. -->
+    <header>
+        <h1>Mi Portafolio de Desarrollador</h1>
+    </header>
+
+    <!-- 2. Sección de Navegación -->
+    <!-- Función: Barra de navegación con enlaces internos. Mejora futura: Implementar scroll suave con CSS y resaltar la sección activa mediante JavaScript. -->
+    <nav>
+        <ul>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#tarjetas">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- 3.1 Presentación Personal -->
+        <!-- Función: Muestra una breve biografía, intereses y misión profesional. Mejora futura: Agregar un botón para descargar el CV en formato PDF. -->
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p>
+                Soy un desarrollador web apasionado por crear interfaces limpias, accesibles y centradas en el usuario. 
+                Mi misión es seguir perfeccionando mis habilidades en frontend, aprender nuevas tecnologías y colaborar 
+                en proyectos que generen un impacto positivo en la comunidad digital.
+            </p>
+            <!-- Recuerda crear la carpeta "img" y colocar una imagen llamada avatar.jpg (o cambia la ruta) -->
+            <img src="img/avatar.jpg" alt="Avatar ilustrativo del desarrollador trabajando frente a una computadora">
+        </section>
+
+        <!-- 3.2 Tarjetas o Columnas -->
+        <section id="tarjetas">
+            <h2>Mis Proyectos Destacados</h2>
+            <div class="cards-container">
+                <article class="card">
+                    <img src="img/proyecto1.jpg" alt="Captura de pantalla del Proyecto 1">
+                    <h3>Landing Page E-commerce</h3>
+                    <p>Diseño responsive implementado con Flexbox y animaciones CSS puras.</p>
+                </article>
+                <article class="card">
+                    <img src="img/proyecto2.jpg" alt="Captura de pantalla del Proyecto 2">
+                    <h3>Aplicación de Clima</h3>
+                    <p>Consumo de API REST para mostrar pronósticos actualizados por ciudad.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- 3.3 Listado de Habilidades -->
+        <section id="habilidades">
+            <h2>Habilidades y Tecnologías</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tecnología</th>
+                        <th>Nivel de Dominio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>HTML5 & Semántica</td><td>Avanzado</td></tr>
+                    <tr><td>CSS3 & Flexbox/Grid</td><td>Intermedio</td></tr>
+                    <tr><td>JavaScript</td><td>Básico</td></tr>
+                    <tr><td>Git & GitHub</td><td>Intermedio</td></tr>
+                </tbody>
+            </table>
+            <h3>Hobbies</h3>
+            <ul>
+                <li>Fotografía urbana y naturaleza</li>
+                <li>Lectura de ciencia ficción y tecnología</li>
+                <li>Senderismo y ciclismo</li>
+            </ul>
+        </section>
+
+        <!-- 3.4 Formulario de Contacto -->
+        <!-- Función: Captura datos básicos del visitante. Mejora futura: Conectar el formulario a un servicio backend (ej. Formspree o EmailJS) para recibir los mensajes por correo. -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="#" method="POST" class="contact-form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </section>
+
+        <!-- 3.5 Películas Favoritas -->
+        <section id="peliculas">
+            <h2>Mis 3 Películas Favoritas</h2>
+            <div class="movies-grid">
+                <div class="movie-item">
+                    <img src="img/peli1.jpg" alt="Póster de la película Interestelar">
+                    <h3>Interestelar</h3>
+                    <p>Una obra maestra que combina ciencia, emociones humanas y visuales impactantes sobre el espacio-tiempo.</p>
+                </div>
+                <div class="movie-item">
+                    <img src="img/peli2.jpg" alt="Póster de la película The Matrix">
+                    <h3>The Matrix</h3>
+                    <p>Revolucionó el cine de acción y la filosofía detrás de la realidad simulada y la IA.</p>
+                </div>
+                <div class="movie-item">
+                    <img src="img/peli3.jpg" alt="Póster de la película El Padrino">
+                    <h3>El Padrino</h3>
+                    <p>Un clásico indiscutible del cine que explora el poder, la lealtad y las dinámicas familiares.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 4. Sección de Pie de Página -->
+    <footer>
+        <p>&copy; 2026 Mi Portafolio Personal. Todos los derechos reservados.</p>
+        <div class="social-links">
+            <a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://linkedin.com/in/tu-usuario" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="mailto:correo@ejemplo.com">Email</a>
+        </div>
+    </footer>
+
+</body>
+</html>

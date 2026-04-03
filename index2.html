@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Personal - Leo Paryszewski</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Leo Paryszewski | Desarrollador & Artesano</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section id="sobre-mi">
+            <h2>Sobre Mí</h2>
+            <p>
+                Soy un apasionado de la tecnología y los procesos artesanales. Actualmente curso la Tecnicatura 
+                Superior en Desarrollo de Software y estudio herrería. Mi misión como desarrollador es 
+                fusionar la precisión técnica con soluciones digitales innovadoras.
+            </p>
+            <img src="img/perfil.jpg" alt="Foto de perfil de Leo" width="200">
+        </section>
+
+        <section id="tarjetas">
+            <h2>Mis Pasiones</h2>
+            <div class="contenedor-tarjetas">
+                <article class="tarjeta">
+                    <img src="img/bici.jpg" alt="Bicicleta urbana">
+                    <h3>Ciclismo y Mecánica</h3>
+                    <p>Amante de las bicicletas y experto en mecánica básica tras completar un curso anual.</p>
+                </article>
+                <article class="tarjeta">
+                    <img src="img/herreria.jpg" alt="Trabajo en metal">
+                    <h3>Herrería</h3>
+                    <p>Explorando el trabajo con metales y la creación de estructuras sólidas.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades y Hobbies</h2>
+            <table>
+                <tr>
+                    <th>Tecnología/Hobby</th>
+                    <th>Nivel/Interés</th>
+                </tr>
+                <tr>
+                    <td>HTML & CSS</td>
+                    <td>En formación</td>
+                </tr>
+                <tr>
+                    <td>Mecánica de Bicis</td>
+                    <td>Avanzado</td>
+                </tr>
+                <tr>
+                    <td>React.js</td>
+                    <td>Próximamente (Recursando)</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="#">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="tel">Teléfono:</label>
+                <input type="tel" id="tel" name="tel">
+
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </section>
+
+        <section id="peliculas">
+            <h2>Películas Favoritas</h2>
+            <div class="pelicula">
+                <h3>The Matrix</h3>
+                <img src="img/matrix.jpg" alt="Poster de Matrix">
+                <p>Un clásico que explora la realidad y la tecnología.</p>
+            </div>
+            <div class="pelicula">
+                <h3>Bicycle Thieves</h3>
+                <img src="img/ladrones.jpg" alt="Poster de Ladrones de Bicicletas">
+                <p>Una obra maestra del neorrealismo sobre la importancia de una bici.</p>
+            </div>
+            <div class="pelicula">
+                <h3>Iron Man</h3>
+                <img src="img/ironman.jpg" alt="Poster de Iron Man">
+                <p>La combinación perfecta entre herrería avanzada y software.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Leo Paryszewski. Encuéntrame en 
+            <a href="https://github.com/tu-usuario">GitHub</a> o 
+            <a href="https://linkedin.com/in/tu-usuario">LinkedIn</a>.
+        </p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portafolio Personal</title>
+  <!-- Link a Google Fonts (Roboto) -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- Vinculo al CSS principal -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header: título o logo del sitio -->
+  <header>
+    <h1 class="site-title">Mi Portafolio</h1>
+    <!-- Comentario 1: Aquí podría colocarse un logo SVG y un enlace al inicio -->
+  </header>
+
+  <!-- Barra de navegación con enlaces a secciones principales -->
+  <nav>
+    <ul class="nav-list">
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#tarjetas">Proyectos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#peliculas">Películas</a></li>
+    </ul>
+    <!-- Comentario 2: Se puede mejorar esta navegación agregando un menú hamburguesa para móviles -->
+  </nav>
+
+  <main>
+    <!-- Presentación Personal -->
+    <section id="sobre-mi" class="sobre-mi">
+      <h2>Sobre mí</h2>
+      <!-- Comentario 3: Aquí describo quién soy, intereses y misión como desarrollador -->
+      <div class="presentacion">
+        <img src="img/avatar.svg" alt="Avatar de la persona" class="avatar">
+        <p>
+          Hola, soy [Tu Nombre o Alias], desarrollador/a web en formación. Me interesan el desarrollo front-end,
+          experiencias de usuario y construir interfaces accesibles. Mi misión es aprender continuamente y producir
+          proyectos claros, mantenibles y responsivos.
+        </p>
+      </div>
+    </section>
+
+    <!-- Tarjetas / Proyectos -->
+    <section id="tarjetas" class="tarjetas">
+      <h2>Proyectos</h2>
+      <div class="tarjetas-grid">
+        <article class="tarjeta">
+          <img src="img/movie1.svg" alt="Proyecto 1 - imagen" class="tarjeta-img">
+          <h3>Proyecto 1</h3>
+          <p>Breve descripción del proyecto 1. Tecnologías: HTML, CSS, JavaScript.</p>
+        </article>
+
+        <article class="tarjeta">
+          <img src="img/movie2.svg" alt="Proyecto 2 - imagen" class="tarjeta-img">
+          <h3>Proyecto 2</h3>
+          <p>Breve descripción del proyecto 2. Tecnologías: React, APIs, Responsive Design.</p>
+        </article>
+
+        <!-- Puedes copiar más tarjetas para agregar más proyectos -->
+      </div>
+    </section>
+
+    <!-- Listado de Habilidades -->
+    <section id="habilidades" class="habilidades">
+      <h2>Habilidades</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Domino</th>
+            <th>Quiero aprender</th>
+            <th>Hobbies</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML, CSS, JavaScript básico</td>
+            <td>React avanzado, Node.js</td>
+            <td>Fotografía, cine, ajedrez</td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- Comentario 4: Considera usar una visualización tipo progress bar para mostrar niveles de dominio. -->
+    </section>
+
+    <!-- Formulario de Contacto -->
+    <section id="contacto" class="contacto">
+      <h2>Contacto</h2>
+      <form action="#" method="post" class="contact-form">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
+
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="+54 9 ...">
+
+        <button type="submit" class="btn-submit">Enviar</button>
+      </form>
+    </section>
+
+    <!-- Películas Favoritas -->
+    <section id="peliculas" class="peliculas">
+      <h2>Películas Favoritas</h2>
+      <div class="peliculas-list">
+        <article class="pelicula-item">
+          <img src="img/movie1.svg" alt="Película 1" class="pelicula-img">
+          <h3>Película 1</h3>
+          <p>Comentario breve sobre por qué esta película es una de las mejores según mi criterio.</p>
+        </article>
+
+        <article class="pelicula-item">
+          <img src="img/movie2.svg" alt="Película 2" class="pelicula-img">
+          <h3>Película 2</h3>
+          <p>Comentario breve sobre la segunda película favorita.</p>
+        </article>
+
+        <article class="pelicula-item">
+          <img src="img/movie3.svg" alt="Película 3" class="pelicula-img">
+          <h3>Película 3</h3>
+          <p>Comentario breve sobre la tercera película favorita.</p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer con enlaces a redes sociales -->
+  <footer>
+    <p>Encuéntrame en: <a href="#">Twitter</a> | <a href="#">GitHub</a> | <a href="#">LinkedIn</a></p>
+    <p>&copy; 2026 — Portafolio Personal</p>
+  </footer>
+
+</body>
+</html>
